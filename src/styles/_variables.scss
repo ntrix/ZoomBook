@@ -1,0 +1,14 @@
+$gray: #f0f2f5;
+$border-gray: #b3b5b9;
+$blue: #1877f2;
+$fb-blue: #3b5998;
+$fb-lightblue: #9cb4d8;
+$gray-text: #5f666f;
+$red: #ee5555;
+
+@mixin flex($direction: row, $justify-content: space-between, $align-items: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

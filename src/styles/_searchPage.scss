@@ -1,0 +1,49 @@
+.search-people {
+    width: 40%;
+    margin: 4em auto;
+    padding: 1em;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 6px $gray;
+    background-color: white;
+    p {
+        margin: 3em 0;
+        text-align: center;
+        font-size: 1.1rem;
+        color: $gray-text;
+    }
+    h2 {
+        margin: 0.4em 0;
+    }
+    figure {
+        padding: 0.8em 0;
+        border-bottom: 1px solid $border-gray;
+        @include flex(row, space-between, center);
+        a {
+            @include flex(row, flex-start, center);
+        }
+        img {
+            height: 80px;
+            width: 80px;
+            margin-right: 10px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        figcaption {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        &:last-child {
+            border: none;
+        }
+        .action {
+            padding: 0.5em;
+            border-radius: 0.3rem;
+            border: none;
+            font-weight: bold;
+
+            color: white;
+            background-color: $blue;
+            cursor: pointer;
+        }
+    }
+}

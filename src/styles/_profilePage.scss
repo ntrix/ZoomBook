@@ -1,0 +1,239 @@
+.intro {
+    background-color: white;
+    box-shadow: 0 0 6px $border-gray;
+    .user-images {
+        @include flex(column, center, center);
+        position: relative;
+        margin-top: -10px;
+        .cover-photo-container {
+            overflow: hidden;
+            height: 350px;
+            max-height: 400px;
+            width: 900px;
+            max-width: 100%;
+            
+            background: rgb(163, 163, 170);
+            background: linear-gradient(
+                0deg,
+                rgba(163, 163, 170, 1) 0%,
+                rgba(240, 242, 245, 1) 35%
+            );
+            .cover-photo {
+                min-width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .profile-picture {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            bottom: -20px;
+            left: 50%;
+
+            border-radius: 50%;
+            border: 5px solid white;
+            background: $gray;
+            transform: translateX(-50%);
+        }
+    }
+    article {
+        @include flex(column, center, flex-end);
+        width: 900px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1.5em 0;
+        & > p:first-of-type {
+            width: 100%;
+            margin: 1em 0;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            @extend .gray-btn;
+            p {
+                margin: auto 0.5rem;
+            }
+        }
+        button.add-friend {
+            color: white;
+            background-color: $blue;
+            &:hover {
+                background-color: $blue;
+                transform: translateY(1px);
+            }
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+    }
+    .edit-form.active {
+        display: block;
+    }
+    .edit-form {
+        display: none;
+        position: absolute;
+        width: 700px;
+        top: 20%;
+        left: 50%;
+
+        box-shadow: 0 0 500px 300px $gray;
+        background: white;
+        z-index: 100;
+        transform: translateX(-50%);
+        .errors {
+            padding: 1em;
+            font-size: 1.1rem;
+        }
+        h2 {
+            @include flex(row, space-between, center);
+            padding: 0.8em;
+            border-bottom: 1px solid $border-gray;
+            button {
+                width: 40px;
+                margin: 0;
+                border-radius: 50%;
+                font-weight: normal;
+                color: orangered;
+                background-color: $gray;
+                &:hover {
+                    background-color: $border-gray;
+                    transform: translateY(1px);
+                }
+            }
+        }
+        & > div {
+            @include flex(column space-between, center);
+            flex-wrap: wrap;
+            padding: 1em;
+            h3 {
+                width: 100%;
+            }
+            label {
+                padding: 0.5rem 1.5rem;
+                border-radius: 1.5rem;
+                font-weight: bold;
+                color: $blue;
+                cursor: pointer;
+                &:hover {
+                    background-color: $gray;
+                    transform: translateY(1px);
+                }
+            }
+            input[type='file'] {
+                position: absolute;
+                width: 0;
+            }
+            input[type='text'],
+            textarea {
+                width: max-content;
+                padding: 1em;
+                resize: none;
+                border-radius: 1.5rem;
+                border: none;
+
+                outline: none;
+                font-size: 1.2rem;
+                background-color: $gray;
+            }
+            div {
+                @include flex(row, center, center);
+                width: 100%;
+                position: relative;
+                color: $blue;
+                &:first-child {
+                    padding: 1em 0;
+                }
+                .profile-picture-preview {
+                    height: 150px;
+                    width: 150px;
+                    border: none;
+                    border-radius: 50%;
+                }
+                .cover-photo-preview {
+                    height: 220px;
+                    width: 450px;
+                    border: none;
+                    border-radius: 0.3rem;
+                    background-color: $gray;
+                }
+            }
+        }
+        button {
+            width: 96%;
+            margin: 0.8em;
+            color: $blue;
+            background-color: #e7f3ff;
+            &:hover {
+                background-color: #c4d7e9bb;
+                transform: scale(0.98);
+            }
+        }
+    }
+}
+
+.cols-wrapper {
+
+    @include flex(row, center, flex-start);
+    .posts {
+        margin-left: 15px;
+        margin-right: 0;
+        @media screen and(max-width:960px) {
+            width: 90%;
+        }
+    }
+    .user-friends {
+        width: 350px;
+        margin: 4em 0;
+        padding: 1em;
+        border-radius: 0.3rem;
+        box-shadow: 0 0 3px $border-gray;
+        background-color: white;
+        @media screen and(max-width:960px) {
+            display: none;
+        }
+        h2 {
+            @include flex(row, space-between, center);
+            button {
+                @extend .gray-btn;
+                font-weight: normal !important;
+                color: $blue !important;
+                background-color: white !important;
+                &:hover {
+                    background-color: $gray !important;
+                    transform: translateY(1px);
+                }
+            }
+        }
+        & > div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            margin-top: 1em;
+            a {
+                display: inline-block;
+            }
+            figure {
+                @include flex(column, flex-start, center);
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 0.3rem;
+                }
+                figcaption {
+                    margin-top: 0.5em;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+}

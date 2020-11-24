@@ -1,0 +1,84 @@
+.box {
+    display: flex;
+    position: absolute;
+    top: -50px;
+    left: 0;
+
+    border-radius: 1.5rem;
+    border: 1px solid transparent;
+    box-shadow: 1px 2px 3px #333;
+    transition: transform 150ms ease;
+    transform: scale(0);
+    button {
+        position: relative;
+        padding: 0 !important;
+        outline: none;
+        cursor: pointer;
+        img {
+            height: 45px;
+            width: 45px;
+            transition: transform 250ms ease;
+            &:hover {
+                background-color: transparent !important;
+                transform: scale(1.2) translateY(-5px);
+            }
+        }
+        &:hover .legend-reaction {
+            display: inline;
+        }
+        .legend-reaction {
+            display: none;
+            position: absolute;
+            padding: 0.4rem;
+            top: -3rem;
+            border-radius: 1rem;
+
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            background-color: #333;
+        }
+    }
+    button {
+        opacity: 0;
+    }
+    .reaction-like {
+        transition: transform 0.4s ease, opacity 1s ease-out;
+        transform: translateY(55px);
+    }
+    .reaction-love {
+        transition: transform 0.4s ease, opacity 1s ease-out;
+        transform: translateY(50px);
+    }
+    .reaction-hug {
+        transition: transform 0.6s ease, opacity 1s ease-out;
+        transform: translateY(45px);
+    }
+    .reaction-haha {
+        transition: transform 0.6s ease, opacity 1s ease-out;
+        transform: translateY(40px);
+    }
+    .reaction-wow {
+        transition: transform 0.8s ease, opacity 1s ease-out;
+        transform: translateY(35px);
+    }
+    .reaction-sad {
+        transition: transform 0.8s ease, opacity 1s ease-out;
+        transform: translateY(30px);
+    }
+    .reaction-angry {
+        transition: transform 1s ease, opacity 1s ease-out;
+        transform: translateY(25px);
+    }
+}
+
+#like-btn:hover .box button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.like:hover .box {
+    background: white;
+    transform-origin: (50%, 0);
+    transform: scale(1);
+}

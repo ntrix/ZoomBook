@@ -85,13 +85,13 @@ app.use(logger('dev'));
 app.use(express.json({ limit: '5mb' }));
 app.use(express.urlencoded({ extended: false, limit: '5mb' }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../build')));
 
 app.use('/api/posts', indexRoute);
 app.use('/api/users', usersRoute);
 
+app.use(express.static(path.join(__dirname, '../build')));
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../build'));
 });
 
 module.exports = app;

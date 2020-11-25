@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TimelinePost from '../timelinePage/TimelinePost';
-import headers from 'services/headers';
+import headers from '../../services/headers';
 import axios from 'axios';
 
 export default function UserPosts({ currentUser, profile_user_id, avatar }) {

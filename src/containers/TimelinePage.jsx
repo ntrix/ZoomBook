@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import io from 'socket.io-client';
+import io from '../socket.io-client';
 
-import headers from 'services/headers';
+import headers from '../services/headers';
 import axios from 'axios';
 
 import HeaderNav from './HeaderNav';

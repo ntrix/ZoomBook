@@ -2,8 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logOutIcon from 'images/logOut.png';
-import videoChat from 'images/videoChat.png';
+import logOutIcon from '../../images/logOut.png';
+import videoChat from '../../images/videoChat.png';
 
 export default function AccountSetting({ name, user_id, avatar, logOut }) {
     return (

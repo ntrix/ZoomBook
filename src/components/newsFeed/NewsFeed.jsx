@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TimelinePost from '../timelinePage/TimelinePost';
 import CreateNews from './CreateNews';
 import LoadingSpin from '../common/LoadingSpin';
-import headers from 'services/headers';
+import headers from '../../services/headers';
 import axios from 'axios';
 
 export default function NewsFeed({ currentUser, socket }) {

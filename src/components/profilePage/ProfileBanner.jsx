@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import EditProfileForm from './EditProfileForm';
-import defaultAvatar from 'images/defaultAvatar.png';
-import editIcon from 'images/edit.png';
-import AddFriendBtn from 'components/common/AddFriendBtn';
+import defaultAvatar from '../../images/defaultAvatar.png';
+import editIcon from '../../images/edit.png';
+import AddFriendBtn from '../common/AddFriendBtn';
 
 const defaultCover = 'https://res.cloudinary.com/dctcnhecv/image/upload/v1605436933/midb2bmtahameqrsea36.jpg';
 

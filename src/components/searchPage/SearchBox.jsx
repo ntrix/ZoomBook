@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import headers from 'services/headers';
+import headers from '../../services/headers';
 import axios from 'axios';
 
-import SearchIcon from 'images/search.png';
+import SearchIcon from '../../images/search.png';
 
 export default function SearchBox({user_id}) {
     const [showIcon, setShowIcon] = useState(1);

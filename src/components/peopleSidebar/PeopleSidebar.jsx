@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Person from './Person';
-import headers from 'services/headers';
+import headers from '../../services/headers';
 import axios from 'axios';
 
 export default function PeopleSidebar({ currentUser }) {

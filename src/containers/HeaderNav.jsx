@@ -5,9 +5,9 @@ import SearchBox from 'components/searchPage/SearchBox';
 import AccountSetting from '../components/headerNav/AccountSetting';
 import Notifications from '../components/headerNav/Notifications';
 
-import Logo from 'images/ZoomBook.png';
-import defaultAvatar from 'images/defaultAvatar.png';
-import edit from 'images/edit.png';
+import Logo from '../images/ZoomBook.png';
+import defaultAvatar from '../images/defaultAvatar.png';
+import edit from '../images/edit.png';
 
 export default function HeaderNav({
     username,

@@ -5,21 +5,21 @@ import moment from 'moment';
 import EditNewsForm from '../newsFeed/EditNewsForm';
 import PostComment from './PostComment';
 import PostReaction from './PostReaction';
-import headers from 'services/headers';
+import headers from '../../services/headers';
 import axios from 'axios';
 
-import defaultAvatar from 'images/defaultAvatar.png';
+import defaultAvatar from '../../images/defaultAvatar.png';
 
-import edit from 'images/edit.png';
-import deleteIcon from 'images/delete.png';
+import edit from '../../images/edit.png';
+import deleteIcon from '../../images/delete.png';
 
-import like from 'images/like.png';
-import love from 'images/love.png';
-import hug from 'images/hug.png';
-import haha from 'images/haha.png';
-import wow from 'images/wow.png';
-import sad from 'images/sad.png';
-import angry from 'images/angry.png';
+import like from '../../images/like.png';
+import love from '../../images/love.png';
+import hug from '../../images/hug.png';
+import haha from '../../images/haha.png';
+import wow from '../../images/wow.png';
+import sad from '../../images/sad.png';
+import angry from '../../images/angry.png';
 
 export default function TimelinePost({
     post_id,

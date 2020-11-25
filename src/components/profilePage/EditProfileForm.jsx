@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import headers from 'services/headers';
+import headers from '../../services/headers';
 import axios from 'axios';
 
 export default function EditProfileForm({

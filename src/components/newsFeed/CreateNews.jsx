@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import headers from 'services/headers';
-import videoChat from 'images/videoChat.png';
-import addPhoto from 'images/addPhoto.png';
-import defaultAvatar from 'images/defaultAvatar.png';
+import headers from '../../services/headers';
+import videoChat from '../../images/videoChat.png';
+import addPhoto from '../../images/addPhoto.png';
+import defaultAvatar from '../../images/defaultAvatar.png';
 import axios from 'axios';
 
 export default function CreateNews({ username, avatar, user_id, setPosts, socket }) {

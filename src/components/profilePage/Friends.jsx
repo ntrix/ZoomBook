@@ -1,5 +1,5 @@
 import React from 'react';
-import defaultAvatar from 'images/defaultAvatar.png';
+import defaultAvatar from '../../images/defaultAvatar.png';
 import { Link } from 'react-router-dom';
 
 export default function Friends({ friends }) {

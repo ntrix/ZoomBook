@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import defaultAvatar from 'images/defaultAvatar.png';
+import defaultAvatar from '../../images/defaultAvatar.png';
 import ChatWindow from './ChatWindow';
 
 export default function ContactList({ friend, socket, currentUserID }) {

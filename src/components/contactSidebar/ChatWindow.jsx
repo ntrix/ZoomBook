@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import defaultAvatar from 'images/defaultAvatar.png';
+import defaultAvatar from '../../images/defaultAvatar.png';
 
 export default function ChatWindow({
     showChatWindow,

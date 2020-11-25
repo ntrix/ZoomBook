@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import headers from 'services/headers';
+import headers from '../../services/headers';
 import axios from 'axios';
 
 export default function AddFriendBtn({

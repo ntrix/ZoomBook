@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import SearchBox from 'components/searchPage/SearchBox';
+import SearchBox from '../components/searchPage/SearchBox';
 import AccountSetting from '../components/headerNav/AccountSetting';
 import Notifications from '../components/headerNav/Notifications';
 

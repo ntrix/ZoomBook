@@ -2,7 +2,7 @@ const app = require('./app');
 const debug = require('debug')('zoombookbe:server');
 const http = require('http');
 
-const port = normalizePort(process.env.PORT || '4000');
+const port = process.env.PORT || 5000;
 app.set('port', port);
 
 const server = http.createServer(app);
@@ -12,12 +12,6 @@ server.on('listening', onListening);
 
 const io = app.io;
 io.attach(server);
-
-function normalizePort(val) {
-    const port = parseInt(val, 10);
-
-    return isNaN(port)? val: port? port: false;
-}
 
 function onError(error) {
     if (error.syscall !== 'listen') throw error;

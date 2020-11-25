@@ -842,56 +842,14 @@ body {
 }
 
 .right-col {
-    margin: 2em 0;
+    margin: 1em 0;
     h3 {
         padding: 0.6em 0;
         color: $gray-text;
     }
-    .find-friends {
-        min-width: 250px;
-        padding: 0 1em;
-        border-radius: 0.3rem;
-        box-shadow: 0 0 3px $border-gray;
-        background-color: white;
-        article {
-            display: flex;
-            padding: 1em 0;
-            align-items: center;
-            img {
-                @extend .placeholder-image;
-                height: 40px;
-                width: 40px;
-            }
-            div {
-                flex: 1;
-                margin-left: 15px;
-                @include flex(row, space-between, center);
-                p {
-                    margin-bottom: 5px;
-                    font-size: 1.1rem;
-                    font-weight: bold;
-                    color: black;
-                }
-                button {
-                    width: 40%;
-                    padding: 0.4em;
-                    border-radius: 0.3rem;
-                    border: 1px solid transparent;
-                    font-weight: bold;
-
-                    color: white;
-                    background-color: $blue;
-                    cursor: pointer;
-                    &:active {
-                        transform: scale(0.98);
-                    }
-                }
-            }
-        }
-    }
     .contacts-chat {
         width: 350px;
-        margin-top: 4em;
+        margin: 1em 0;
         padding: 0 1em;
         .info-chat-wrapper {
             @include flex(column, flex-start, flex-start);
@@ -993,6 +951,49 @@ body {
                 button {
                     width: 0;
                     border: none;
+                }
+            }
+        }
+    }
+    .find-friends {
+        min-width: 250px;
+        margin: 1em 0;
+        padding: 0 1em;
+        border-radius: 0.3rem;
+        box-shadow: 0 0 3px $border-gray;
+        background-color: white;
+        article {
+            display: flex;
+            padding: 1em 0;
+            align-items: center;
+            img {
+                @extend .placeholder-image;
+                height: 40px;
+                width: 40px;
+            }
+            div {
+                flex: 1;
+                margin-left: 15px;
+                @include flex(row, space-between, center);
+                p {
+                    margin-bottom: 5px;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: black;
+                }
+                button {
+                    width: 40%;
+                    padding: 0.4em;
+                    border-radius: 0.3rem;
+                    border: 1px solid transparent;
+                    font-weight: bold;
+
+                    color: white;
+                    background-color: $blue;
+                    cursor: pointer;
+                    &:active {
+                        transform: scale(0.98);
+                    }
                 }
             }
         }

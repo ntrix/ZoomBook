@@ -55,9 +55,9 @@ export default function TimelinePage({ match, logOut }) {
                 </section>
 
                 <section className="right-col">
-                    <PeopleSidebar currentUser={user} />
-
                     <ContactSidebar currentUser={user} socket={socket} />
+
+                    <PeopleSidebar currentUser={user} />
                 </section>
             </div>
         </>

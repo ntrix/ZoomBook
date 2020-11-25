@@ -89,7 +89,7 @@ export default function SignUpForm() {
                     type="text"
                     name="last_name"
                     required
-                    placeholder="Surname"
+                    placeholder="Last name"
                     onChange={(e) => setLast_name(e.target.value)}
                 />
             </div>
@@ -98,7 +98,7 @@ export default function SignUpForm() {
                 type="email"
                 name="email"
                 required
-                placeholder="Email address *"
+                placeholder="Email address"
                 onChange={(e) => setEmail(e.target.value)}
             />
 
@@ -107,7 +107,7 @@ export default function SignUpForm() {
                 name="password"
                 required
                 minLength="8"
-                placeholder="New password *"
+                placeholder="New password"
                 onChange={(e) => setPassword(e.target.value)}
             />
 
@@ -116,7 +116,7 @@ export default function SignUpForm() {
                 name="password_confirmation"
                 required
                 minLength="8"
-                placeholder="Confirm password *"
+                placeholder="Confirm password"
                 onChange={(e) => setPassword_confirmation(e.target.value)}
             />
 
@@ -134,7 +134,7 @@ export default function SignUpForm() {
                 </select>
             </div>
 
-            <p className="p-titles">Gender *</p>
+            <p className="p-titles">Gender</p>
 
             <div className="gender-choices">
                 <div>

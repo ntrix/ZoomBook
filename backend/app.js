@@ -91,7 +91,7 @@ app.use('/api/users', usersRoute);
 
 app.use(express.static(path.join(__dirname, '../build')));
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../build'));
+    res.sendFile(path.resolve(__dirname, '../build', 'index.html'));
 });
 
 module.exports = app;

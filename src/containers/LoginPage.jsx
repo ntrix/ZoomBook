@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import LoginForm from '../components/loginPage/LoginForm';
 import SignUpForm from '../components/loginPage/SignUpForm';
 
-import Logo from 'images/ZoomBook.png';
+import Logo from '../images/ZoomBook.png';
 
 export default function LoginHeader({ authenticated }) {
 

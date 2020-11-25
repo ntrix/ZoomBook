@@ -5,7 +5,7 @@ import headers from './services/headers';
 import axios from 'axios';
 
 import './styles/style.scss';
-import LoginPage from './containers/Login';
+import LoginPage from './containers/LoginPage';
 import TimelinePage from './containers/TimelinePage';
 import ProfilePage from './containers/ProfilePage';
 import SearchPage from './containers/SearchPage';

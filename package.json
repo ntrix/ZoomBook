@@ -6,7 +6,7 @@
     "scripts": {
         "start": "node backend/server.js",
         "devstart": "nodemon backend/server.js",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
+        "heroku-postbuild": "rm -rf build && npm run build && cp -r build backend/",
         "dev": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",

@@ -38,12 +38,16 @@ export default function CreateNews({ username, avatar, user_id, setPosts, socket
     };
 
     const handleFile = (e) => {
-        setImagePreview(URL.createObjectURL(e.target.files[0]));
-        const reader = new FileReader();
-        reader.readAsDataURL(e.target.files[0]);
-        reader.onloadend = () => {
-            setImage(reader.result);
-        };
+        try {
+            setImagePreview(URL.createObjectURL(e.target.files[0]));
+            const reader = new FileReader();
+            reader.readAsDataURL(e.target.files[0]);
+            reader.onloadend = () => {
+                setImage(reader.result);
+            };
+        } catch (err) {
+            console.error(err);
+        }
     };
 
     return (

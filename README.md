@@ -3,7 +3,8 @@
 
 Deploy: Heroku
 
-this is the main app, both parts of Backend and Frontend in one
+This is the main app, both parts of Backend and Frontend on one server.
+These parts can also be used/deployed separately. 
 
 ## Backend only part:
 

@@ -11,7 +11,7 @@
             max-height: 400px;
             width: 900px;
             max-width: 100%;
-            
+
             background: rgb(163, 163, 170);
             background: linear-gradient(
                 0deg,
@@ -75,19 +75,25 @@
         }
     }
     .edit-form.active {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        left: 20%;
+        right: 20%;
+        width: 60%;
     }
     .edit-form {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
         position: absolute;
-        width: 700px;
+        width: 0%;
         top: 20%;
         left: 50%;
+        right: 50%;
 
         box-shadow: 0 0 500px 300px $gray;
         background: white;
         z-index: 100;
-        transform: translateX(-50%);
+        transition: .7s ease;
         .errors {
             padding: 1em;
             font-size: 1.1rem;

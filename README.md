@@ -16,8 +16,8 @@ https://github.com/ntrix/ZoomBookFE
 
 ## Technologies:
 
-Frontend: Jasvascript, React, SASS, ..
-Backend: Nodejs, Expressjs, MongoDB, Mongoose, ..
+Frontend: Javascript, React, SASS, ..
+Backend: Nodejs, Express js, MongoDB, Mongoose, ..
 Others: Docker, Postman, Git, Github, Heroku, ..
 
 # Frontend UI UX
@@ -25,7 +25,7 @@ Others: Docker, Postman, Git, Github, Heroku, ..
 ## Story book:
 
 1. Users must log in to see anything except the log in page.
-2. Users can log in using real facebook details (optional, deactived).
+2. Users can log in using real facebook details (optional, disabled).
 3. Users can send friend requests to others.
 4. A user can accept the friend request to become friends or decline.
 5. Users can create posts and/or can choose upload/post images.
@@ -39,8 +39,8 @@ Others: Docker, Postman, Git, Github, Heroku, ..
 13. The Contacts sidebar lists friends.
 14. Any User listed in Contacts sidebar can be clicked to open a (private) chat window.
 15. The Users sidebar lists random users and buttons for sending friend requests.
-16. Users can eidt/ update Profile with their own photos: upload avatar and cover picture (wallpaper) possible.
-17. Optional: warning email/notification and/or temparory deactived ip/account for 24h by 3x/4x wrong passwords.
+16. Users can edit/ update Profile with their own photos: upload avatar and cover picture (wallpaper) possible.
+17. Optional: warning email/notification and/or temporarily disabled ip/account for 24h by 3x/4x wrong passwords.
 
 ## WIP:
 

@@ -20,9 +20,26 @@ Frontend: Javascript, React, SASS, ..
 Backend: Nodejs, Express js, MongoDB, Mongoose, ..
 Others: Docker, Postman, Git, Github, Heroku, ..
 
+# Backend
+
+## API swagger
+
+https://app.swaggerhub.com/apis/ntrix/ZoomBook/1.0.0#/
+
+## Database MongoDB
+
+Schema: 
+Diagramm: app.diagrams.net
+
+# Deploy
+
+## Heroku
+
+https://zoombook.herokuapp.com/
+
 # Frontend UI UX
 
-## Story book:
+## API & Story book:
 
 1. Users must log in to see anything except the log in page.
 2. Users can log in using real facebook details (optional, disabled).
@@ -49,16 +66,3 @@ these functions are considered as an extern module using 3rd party API and vuejs
 18. Users can create a video conference room and share screen.
 19. Notifications broadcast to all/invited friends.
 20. Users can join the created video conference room via posted linked on the timeline post of their friends.
-
-# Backend
-
-## API swagger
-
-## Database MongoDB
-
-Schema: 
-Diagramm: app.diagrams.net
-
-# Deploy
-
-## Heroku

@@ -19,7 +19,7 @@
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
         "@testing-library/user-event": "^7.2.1",
-        "axios": "^0.21.0",
+        "axios": "^0.21.4",
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.19.0",
         "cloudinary": "^1.22.0",
@@ -43,7 +43,7 @@
         "react-dom": "^16.13.1",
         "react-router-dom": "^5.2.0",
         "react-scripts": "^4.0.0",
-        "socket.io": "^2.3.0",
+        "socket.io": "^2.4.1",
         "socket.io-client": "^2.3.0"
     },
     "proxy": "https://zoombook.herokuapp.com",

@@ -15,6 +15,7 @@ const UserSchema = new Schema({
     friends: [{ type: Schema.Types.ObjectId, ref: 'User' }],
     friend_requests: [{ type: Schema.Types.ObjectId, ref: 'FriendRequest' }],
     joined_on: String,
+    isAdmin: { type: Number, enum: [1, 2, 0] },
 });
 
 const PostSchema = new Schema({

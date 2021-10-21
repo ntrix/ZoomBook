@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const postController = require('../controllers/postController');
 const { check } = require('express-validator');
 const passport = require('passport');
+
+const postController = require('../controllers/postController');
+const reactionOpt = ['Like', 'Love', 'Hug', 'Haha', 'Wow', 'Sad', 'Angry'];
 
 router.use(passport.authenticate('jwt', { session: false }));
 
@@ -17,8 +19,6 @@ router.post('/create',
     ],
     postController.postCreatePost,
 );
-
-const reactionOpt = ['Like', 'Love', 'Hug', 'Haha', 'Wow', 'Sad', 'Angry'];
 
 router.put('/:id/react',
     [
@@ -41,11 +41,11 @@ router.put('/:id/comment',
     postController.putComment,
 );
 
-router.delete('/:id', postController.deletePost);
-
-router.put('/:id',
+router.put('/:id/update',
     [ check('content', `Your post can't be empty`).not().isEmpty().trim().escape() ],
     postController.updatePost,
 );
+
+router.delete('/:id', postController.deletePost);
 
 module.exports = router;

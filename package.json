@@ -13,7 +13,7 @@
         "eject": "react-scripts eject"
     },
     "engines": {
-        "node": "12.16.x"
+        "node": "14.20.0"
     },
     "dependencies": {
         "@testing-library/jest-dom": "^4.2.4",
